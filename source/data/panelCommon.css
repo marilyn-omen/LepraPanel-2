@@ -1,0 +1,13 @@
+body {
+	padding: 5px;
+	font-family: verdana, sans-serif;
+	font-size: 0.8em;
+	color: #000000;
+	line-height: 160%;
+}
+a {
+	color: #333300;
+}
+a:hover {
+	color: #669999 !important;
+}

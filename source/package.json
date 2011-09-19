@@ -1,0 +1,21 @@
+{
+	"id": "panel2@leprosorium.ru",
+	"name": "leprapanel2",
+	"fullName": "LepraPanel 2",
+	"description": "Navigation panel for Leprosorium.ru",
+	"license": "MPL 1.1/GPL 2.0/LGPL 2.1",
+	"author": "Omen <marilyn.omen@gmail.com>",
+	"version": "2.0.1a",
+	"contributors": ["AbbasObscurus",
+		"DSN",
+		"rubzn",
+		"mcm69",
+		"sector",
+		"PsychodelEKS",
+		"zagrebelion",
+		"ACTPOHABT",
+		"karaboz",
+		"PerepeL",
+		"va1en0k"],
+	"url": "http://lepra.sltv.org.ua"
+}

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head>
+    <title>LepraPanel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="panelCommon.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <style type="text/css">
+body {
+    padding: 0;
+    margin:0;
+    font-family: verdana, sans-serif;
+    font-size: 0.7em;
+    color: #000000;
+    line-height: 160%;
+}
+h1,h2,h3 
+{
+    padding: 0;
+    margin: 5px 0;
+}
+h1 {
+   font-size: 1.4em;
+   /*margin-bottom:30px !important;*/
+}
+h2 {
+   font-size: 1.2em;
+}
+h3 {
+   font-size: 1em;
+}
+a {
+    color: #333300;
+}
+a:hover {
+    color: #669999 !important;
+}
+.sub1
+{
+    margin-left:15px;
+}
+.sub2
+{
+    margin-left:30px;
+}
+.sub3
+{
+    margin-left:45px;
+}
+ul.scripts
+{
+    list-style-type: none;
+    padding: 0;
+    margin:5px 0 0 0;
+    overflow:auto;
+    height:175px;
+}
+.btn
+{
+    padding:5px;
+}
+    </style>
+</head>
+<body>
+<div style="text-align:center;height:28px;padding:10px;border-bottom:1px solid #ccc;background:#e1e1e1;">
+        <h1>LepraPanel - Настройки</h1>
+    </div>
+<div style="padding: 25px;">
+    <!--div id="tabs" style="height:290px; margin:10px;">
+        <ul>
+            <li><a href="#tabs-1">Основные</a></li>
+            <li><a href="#tabs-2">Пользовательские скрипты</a></li>
+        </ul>
+        <div id="tabs-1" style="padding: 15px;">
+            <div>
+                <h3>Внешний вид</h3>
+                <input type="checkbox" id="showPanel" />
+                <label for="showPanel">Отображать панель</label>
+                <br />
+                <input type="checkbox" id="showWelcome" class="sub1" />
+                <label for="showWelcome">показывать приветствие</label>
+            </div>
+            <div>
+                <h3>Проверялки</h3>
+                <input type="checkbox" id="checkKarma" class="affects-interval" />
+                <label for="checkKarma">Проверять карму и рейтинг</label>
+                <br />
+                <input type="checkbox" id="checkStuff" class="affects-interval" />
+                <label for="checkStuff">Проверять мои вещи и инбокс</label>
+                <div class="sub2">
+                    <label for="interval">период обновления </label>
+                    <input type="number" id="interval" 
+                        style="border: 0; font-weight:bold; margin:0; padding:0; width:18px;" 
+                        readonly="true" /> мин.
+                    <div id="slider"></div>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-2" style="padding: 15px;">
+            <div id="list-container" />
+        </div>
+    </div--!>
+    <label for="interval">Период обновления: </label>
+    <input type="number" id="interval" 
+        style="border: 0; font-weight:bold; margin:0; padding:0; width:18px;" 
+        readonly="true" /> мин.
+    <div id="slider"></div>
+    <br />
+    <span>Пользовательские скрипты:</span>
+    <div id="list-container" />
+</div>
+<div style="text-align:right;position:absolute;bottom:0;left:0;width:280px;height:33px;padding:10px;border-top:1px solid #ccc;background:#e1e1e1;">
+    <input type="button" value="Сохранить" id="save" style="font-weight: bold;" class="btn" />
+    <input type="button" value="Отмена" id="cancel" class="btn" />
+</div>
+</body>
+</html>
