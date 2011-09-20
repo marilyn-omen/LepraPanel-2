@@ -607,6 +607,22 @@ function initUserscripts() {
         return;
     }
     console.log("Loading userscripts:");
+    // load common js
+    if(mods["common"]) {
+      console.log("  destroying pagemod for: common");
+      mods["common"].destroy();
+      mods["common"] = null;
+    }    
+    console.log("  common");
+    mods["common"] = pagemod.PageMod({
+      include: /http:\/\/([a-zA-Z0-9]+\.)?leprosorium\.ru.*/,
+      contentScriptWhen: "ready",
+      contentScriptFile: [data.url("userscripts/common.js")],
+      onAttach: function onAttach(worker) {
+        console.log("  attached script: common");
+      }
+    });
+    
     userscripts.userscripts.forEach(function(script) {
         if(mods[script.id]) {
             console.log("  destroying pagemod for: " + script.id);
