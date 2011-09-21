@@ -15,7 +15,7 @@ var userscripts = [
     },
     {
         id: "youtube",
-        name: "Просмотр YouTube видео",
+        name: "Просмотр видео",
         description: "",
         include: /http:\/\/([a-zA-Z0-9]+\.)?leprosorium\.ru.*/,
         filename: "youtube.js"

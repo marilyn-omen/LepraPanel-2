@@ -3,8 +3,6 @@
   }
   lp.prototype = {
     processUrl: function(url) {
-      console.log("--processUrl");
-      console.log(url);
       var rawid = url.split("v=")[1];
       if(rawid == null || rawid.length==0) {
         return false;
